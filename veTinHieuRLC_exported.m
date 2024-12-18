@@ -23,6 +23,8 @@ classdef veTinHieuRLC_exported < matlab.apps.AppBase
                 c = app.EditFieldC.Value;
                 w = 0: 0.01 : 2*pi;
                 z = abs(r + 1j*w*l + (1./(1j*w*c)));
+                
+                %new comment in this file
                 plot(app.UIAxes, w, z);
         end
     end
